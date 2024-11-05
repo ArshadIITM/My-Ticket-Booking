@@ -1,3 +1,29 @@
 *{
     margin: 10px;
 }
+
+.my_container{
+    border: 2px solid black;
+    height: auto; 
+}
+
+.my_panel{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    border: 1px dashed black;
+}
+
+.outer_box{
+    border: 1px solid orange;
+    margin-top: 10px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+    color: rgb(5, 5, 110,)
+}
