@@ -13,6 +13,13 @@
     height: auto;
     border: 1px dashed black;
 }
+.input_form{
+    border: 1px solid orange;
+    margin-top: 10px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 .outer_box{
     border: 1px solid orange;
@@ -26,4 +33,9 @@
     text-align: center;
     margin: auto;
     color: rgb(5, 5, 110,)
+}
+.err_msg{
+    text-align: center;
+    margin: auto;
+    color: maroon;
 }

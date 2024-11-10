@@ -12,22 +12,24 @@
             </div>
             <div class="my_panel">
                 <div class="center"><h3>Login</h3></div>
-                
-                <div class="input_form">
-                    <div class="mb-3">
-                        <label for="user_name" class="form-label">User Name(E-mail)</label>
-                        <input type="email" class="form-control" id="user_name" placeholder="iitm@study.ac.in">
+                <form action="/login" method = "POST">
+                    <div class="input_form">
+                        <div class="mb-3">
+                            <label for="user_name" class="form-label">User Name(E-mail)</label>
+                            <input type="email" class="form-control" name = "user_name" id="user_name" placeholder="iitm@study.ac.in">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user_password" class="form-label">Password</label>
+                            <input type="password" class="form-control"name = "user_password" id="user_password" placeholder="Enter Password">
+                        </div> 
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Login</button> 
+                            New User?<a href="/register">Sign Up</a>
+                            <div class="err_msg"> {{msg}} </div>
+                        </div> 
+                        
                     </div>
-                    <div class="mb-3">
-                        <label for="user_password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="user_password" placeholder="Enter Password">
-                    </div> 
-                    <div class="mb-3">
-                        <button type="button" class="btn btn-primary">Login</button> 
-                        New User?<a href="signup.html">Sign Up</a>
-                    </div> 
-                    
-                </div>
+                </form>
             </div> 
         </div>
     </body>

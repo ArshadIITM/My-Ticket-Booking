@@ -12,34 +12,36 @@
             </div>
             <div class="my_panel">
                 <div class="center"><h3>Signup</h3></div>
-                
-                <div class="input_form">
-                    <div class="mb-3">
-                        <label for="user_name" class="form-label">User Name(E-mail)</label>
-                        <input type="email" class="form-control" id="user_name" placeholder="iitm@study.ac.in">
+                <form action="/register" method="POST">
+                    <div class="input_form">
+                        <div class="mb-3">
+                            <label for="user_name" class="form-label">User Name(E-mail)</label>
+                            <input type="email" class="form-control" name="u_name" id="user_name" placeholder="iitm@study.ac.in">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user_password" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="u_pswd" id="user_password" placeholder="Enter Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="full_name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="u_full_name" id="full_name" placeholder="Enter your full name">
+                        </div> 
+                        <div class="mb-3">
+                            <label for="user_location" class="form-label">Location</label>
+                            <input type="text" class="form-control" name="u_location" id="user_location" placeholder="Enter your location">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pin_code" class="form-label">Pincode</label>
+                            <input type="text" class="form-control" name="u_pin" id="pin_code" placeholder="Enter pincode">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Sign Up</button> 
+                            Existing User?<a href="/login">Login</a>
+                            <div class="err_msg"> {{msg}} </div>
+                        </div> 
+                        
                     </div>
-                    <div class="mb-3">
-                        <label for="user_password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="user_password" placeholder="Enter Password">
-                    </div>
-                    <div class="mb-3">
-                        <label for="full_name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="full_name" placeholder="Enter your full name">
-                    </div> 
-                    <div class="mb-3">
-                        <label for="user_location" class="form-label">Location</label>
-                        <input type="text" class="form-control" id="user_location" placeholder="Enter your location">
-                    </div>
-                    <div class="mb-3">
-                        <label for="pin_code" class="form-label">Pincode</label>
-                        <input type="text" class="form-control" id="pin_code" placeholder="Enter pincode">
-                    </div>
-                    <div class="mb-3">
-                        <button type="button" class="btn btn-primary">Sign Up</button> 
-                        Existing User?<a href="login.html">Login</a>
-                    </div> 
-                    
-                </div>
+                </form>
             </div> 
         </div>
     </body>
